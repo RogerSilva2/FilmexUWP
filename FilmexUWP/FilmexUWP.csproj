@@ -109,6 +109,10 @@
     <None Include="FilmexUWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\ic_date_range.png" />
+    <Content Include="Assets\ic_launcher.png" />
+    <Content Include="Assets\ic_star.png" />
+    <Content Include="Assets\ic_whatshot.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

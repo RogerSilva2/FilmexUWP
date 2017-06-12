@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -63,6 +64,27 @@ namespace FilmexUWP
                     }
                 },
             request);
+        }
+    }
+
+    public class DateFormatter : IValueConverter
+    {
+        public object Convert(object value, Type targetType,
+            object parameter, string language)
+        {
+            string formatString = parameter as string;
+            if (!string.IsNullOrEmpty(formatString))
+            {
+                return string.Format(
+                    new CultureInfo(language), formatString, value);
+            }
+            return value.ToString();
+        }
+
+        public object ConvertBack(object value, Type targetType,
+            object parameter, string language)
+        {
+            throw new NotImplementedException();
         }
     }
 }

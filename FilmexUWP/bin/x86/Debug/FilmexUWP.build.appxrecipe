@@ -370,8 +370,17 @@
     <AppxPackagedFile Include="C:\Users\rgrv8\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_date_range.png">
+      <PackagePath>Assets\ic_date_range.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_launcher.png">
+      <PackagePath>Assets\ic_launcher.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_star.png">
+      <PackagePath>Assets\ic_star.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_whatshot.png">
+      <PackagePath>Assets\ic_whatshot.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -399,6 +408,9 @@
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\bin\x86\Debug\FilmexUWP.xr.xml">
       <PackagePath>FilmexUWP.xr.xml</PackagePath>

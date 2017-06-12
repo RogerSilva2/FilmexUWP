@@ -8,32 +8,51 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ProgressBar x:ConnectionId='1' IsIndeterminate="true" Name="Progresso" Visibility="Visible" />
-        <ListBox x:ConnectionId='2' Name="Listagem" ItemsSource="{Binding}">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <VirtualizingStackPanel VirtualizingStackPanel.VirtualizationMode="Recycling"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Image Width="90" Height="90">
-                            <Image.Source>
-                                <BitmapImage UriSource="{Binding Poster_Path}" />
-                            </Image.Source>
-                        </Image>
-                        <StackPanel Orientation="Vertical">
-                            <TextBlock Text="{Binding Title}" TextWrapping="Wrap" Width="Auto" />
+        <!--<ProgressBar IsIndeterminate="true" Name="Progresso" Visibility="Visible" />-->
+        <Grid.Resources>
+            <local:DateFormatter x:Key="FormatConverter" />
+        </Grid.Resources>
+        <StackPanel Background="#FAFAFA" Orientation="Vertical">
+            <StackPanel Background="#607D8B" Orientation="Horizontal">
+                <Image Margin="5,5,5,5" Width="40" Height="40" Source="Assets/ic_launcher.png"/>
+                <TextBlock Foreground="White" Margin="0,15,0,15">Filmex</TextBlock>
+            </StackPanel>
+            <ScrollViewer Height="590">
+                <ListBox x:ConnectionId='1' Name="Listagem" ItemsSource="{Binding}" >
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel VirtualizingStackPanel.VirtualizationMode="Recycling"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock>Popularidade</TextBlock>
-                                <TextBlock Text="{Binding Popularity}" TextWrapping="Wrap" Width="Auto" />
+                                <Image Width="90" Height="90">
+                                    <Image.Source>
+                                        <BitmapImage UriSource="{Binding Poster_Path}" />
+                                    </Image.Source>
+                                </Image>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{Binding Title}" TextWrapping="Wrap" Width="Auto" />
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Margin="5,5,5,5" Width="20" Height="20" Source="Assets/ic_date_range.png" />
+                                        <TextBlock Margin="5,5,5,5" Text="{Binding Release_Date, Converter={StaticResource FormatConverter}, ConverterParameter=\{0:d\}}" TextWrapping="Wrap" Width="Auto" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Margin="5,5,5,5" Width="20" Height="20" Source="Assets/ic_star.png" />
+                                        <TextBlock Margin="5,5,5,5" Text="{Binding Vote_Average}" TextWrapping="Wrap" Width="Auto" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Margin="5,5,5,5" Width="20" Height="20" Source="Assets/ic_whatshot.png" />
+                                        <TextBlock Margin="5,5,5,5" Text="{Binding Popularity}" TextWrapping="Wrap" Width="Auto" />
+                                    </StackPanel>
+                                </StackPanel>
                             </StackPanel>
-                        </StackPanel>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </ScrollViewer>
+        </StackPanel>
     </Grid>
 </Page>
 

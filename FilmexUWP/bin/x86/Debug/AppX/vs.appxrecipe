@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-11T22:52:32.598</Modified>
+      <Modified>2017-06-12T01:13:35.775</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\bin\x86\Debug\FilmexUWP.exe">
       <PackagePath>entrypoint\FilmexUWP.exe</PackagePath>
-      <Modified>2017-06-11T22:52:24.915</Modified>
+      <Modified>2017-06-12T01:13:26.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rgrv8\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,9 +495,21 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T02:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-06-11T16:30:26.541</Modified>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_date_range.png">
+      <PackagePath>Assets\ic_date_range.png</PackagePath>
+      <Modified>2017-06-11T23:37:30.032</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_launcher.png">
+      <PackagePath>Assets\ic_launcher.png</PackagePath>
+      <Modified>2017-06-12T00:52:12.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_star.png">
+      <PackagePath>Assets\ic_star.png</PackagePath>
+      <Modified>2017-06-11T23:37:30.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\ic_whatshot.png">
+      <PackagePath>Assets\ic_whatshot.png</PackagePath>
+      <Modified>2017-06-11T23:37:29.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -533,9 +545,13 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-30T20:23:14.589</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2017-06-11T16:30:26.541</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\bin\x86\Debug\FilmexUWP.xr.xml">
       <PackagePath>FilmexUWP.xr.xml</PackagePath>
-      <Modified>2017-06-11T22:52:22.599</Modified>
+      <Modified>2017-06-12T00:41:22.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -544,11 +560,11 @@
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-11T22:52:31.366</Modified>
+      <Modified>2017-06-12T01:13:34.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rgrv8\OneDrive\Documentos\Visual Studio 2017\Projects\FilmexUWP\FilmexUWP\bin\x86\Debug\Core\FilmexUWP.exe">
       <PackagePath>FilmexUWP.exe</PackagePath>
-      <Modified>2017-06-11T22:52:32.497</Modified>
+      <Modified>2017-06-12T01:13:35.692</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
