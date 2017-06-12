@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Serialization.Json;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,6 +27,7 @@ namespace FilmexUWP
     public sealed partial class MainPage : Page
     {
         private List<Movie> Movies = new List<Movie>();
+        private List<Movie> FavoriteMovies = new List<Movie>();
 
         public MainPage()
         {
@@ -58,12 +60,52 @@ namespace FilmexUWP
                         this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                         {
                             this.DataContext = Movies;
-                            //this.Progresso.IsIndeterminate = !(this.Progresso.IsIndeterminate);
-                            //this.Progresso.Visibility = Visibility.Collapsed;
                         }).AsTask().Wait();
                     }
                 },
             request);
+        }
+
+        private SolidColorBrush GetSolidColorBrush(string hex)
+        {
+            hex = hex.Replace("#", string.Empty);
+            byte a = (byte)(Convert.ToUInt32(hex.Substring(0, 2), 16));
+            byte r = (byte)(Convert.ToUInt32(hex.Substring(2, 2), 16));
+            byte g = (byte)(Convert.ToUInt32(hex.Substring(4, 2), 16));
+            byte b = (byte)(Convert.ToUInt32(hex.Substring(6, 2), 16));
+            SolidColorBrush myBrush = new SolidColorBrush(Windows.UI.Color.FromArgb(a, r, g, b));
+            return myBrush;
+        }
+
+        private void Favoritar_Click(object sender, RoutedEventArgs e)
+        {
+            bool favorited = true;
+            Button button = sender as Button;
+            foreach (Movie movie in FavoriteMovies)
+            {
+                if (movie.Id == button.DataContext as long?)
+                {
+                    FavoriteMovies.Remove(movie);
+                    button.Content = "Favoritar";
+                    button.Background = GetSolidColorBrush("#FFFFC107");
+                    favorited = false;
+                    break;
+                }
+            }
+
+            if (favorited)
+            {
+                foreach (Movie movie in Movies)
+                {
+                    if (movie.Id == button.DataContext as long?)
+                    {
+                        FavoriteMovies.Add(movie);
+                        button.Content = "Favoritado";
+                        button.Background = GetSolidColorBrush("#FF795548");
+                        break;
+                    }
+                }
+            }
         }
     }
 

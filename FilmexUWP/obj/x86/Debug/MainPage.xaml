@@ -8,7 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <!--<ProgressBar IsIndeterminate="true" Name="Progresso" Visibility="Visible" />-->
         <Grid.Resources>
             <local:DateFormatter x:Key="FormatConverter" />
         </Grid.Resources>
@@ -32,7 +31,7 @@
                                         <BitmapImage UriSource="{Binding Poster_Path}" />
                                     </Image.Source>
                                 </Image>
-                                <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Vertical" Width="350">
                                     <TextBlock Text="{Binding Title}" TextWrapping="Wrap" Width="Auto" />
                                     <StackPanel Orientation="Horizontal">
                                         <Image Margin="5,5,5,5" Width="20" Height="20" Source="Assets/ic_date_range.png" />
@@ -47,6 +46,7 @@
                                         <TextBlock Margin="5,5,5,5" Text="{Binding Popularity}" TextWrapping="Wrap" Width="Auto" />
                                     </StackPanel>
                                 </StackPanel>
+                                <Button x:ConnectionId='2' DataContext="{Binding Id}" Content="Favoritar" Foreground="White" Background="#FFC107"                        ></Button>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
